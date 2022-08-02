@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root {
+    --heading-font:'Big Shoulders Display', cursive;
+    --paragraph-font:'Lexend Deca';
+    --primary-clr:hsl(31, 77%, 52%);
+    --secordary-clr: hsl(184, 100%, 22%);
+    --dark-clr:hsl(179, 100%, 13%);
+    --transparent-wht:hsla(0, 0%, 100%, 0.75);
+    --light-gray:hsl(0, 0%, 95%);
+    --font-size:'15px';
+}
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display:grid;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+}
+
+.CardSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:96%;
+}
+
+.card{
+    padding: 40px 50px;
+}
+.card h1{
+    color: var(--light-gray);
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+    padding:20px 0px;
+}
+
+.card p{
+    color: var(--transparent-wht);
+    font-family: var(--paragraph-font);
+    padding: 10px 0px;
+    max-width: 200px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-bottom: 60px;
+
+}
+.card .btn{
+    border: none;
+    font-family: var(--paragraph-font);
+    padding: 12px 26px;
+    border-radius:40px;
+}
+
+.card1{
+    background-color:var(--primary-clr);
+    border-radius: 8px 0px 0px 8px;
+}
+.card2{
+    background-color:var(--secordary-clr);
+}
+.card3{
+    background-color:var(--dark-clr);
+    border-radius: 0px 8px 8px 0px;
+}
+
+.btn1{
+    color:var(--primary-clr);
+}
+.btn2{
+    color:var(--secordary-clr);
+}
+.btn3{
+    color:var(--dark-clr);
+}
+
+.attribution{
+    padding:2rem;
+    background-color:rgba(0, 0, 0,.7);
+    color: var(--light-gray);
+    text-align: center;
+    background-color: black;
+}
+
+.attribution a{
+    /* text-decoration:none; */
+    color: rgb(52, 52, 249);
+}
+
+
+
+@media only screen and (max-width:600px){
+    .container{
+        height:auto;
+        margin: 50px 0px;
+    }
+    .CardSection{
+        flex-direction: column;
+    }
+    .card{
+        min-width: 350px;
+    }
+    .card1{
+        border-radius: 8px 8px 0px 0px !important;
+    }
+    .card3{
+        border-radius: 0px 0px 8px 8px !important;
+    }
+
+}
