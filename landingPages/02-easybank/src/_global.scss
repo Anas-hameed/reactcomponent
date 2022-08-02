@@ -1,0 +1,24 @@
+// COLOURS
+
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin heading {
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+}
+
+@mixin body-text {
+    color: hsl(233, 8%, 62%);
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+@mixin desktop-body-font-size {
+    font-size: 1.2rem;
+}

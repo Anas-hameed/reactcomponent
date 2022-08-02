@@ -1,0 +1,79 @@
+@import '../../global';
+
+.hero {
+    @include flex-center;
+    z-index: 1;
+    padding-bottom: 5.5rem;
+    background-color: hsl(0, 0%, 98%);
+    > .mockup-container {
+        width: 100%;
+        position: relative;
+        @include flex-center;
+        > .mockup {
+            position: relative;
+            max-width: 90vw;
+            margin-top: -7.5rem;
+            z-index: 2;
+        }
+        > .mobile-bg {
+            position: absolute;
+        }
+        > .desktop-bg {
+            display: none;
+        }
+    }
+
+    > .hero-main {
+        @include flex-center;
+        text-align: center;
+        margin-top: 1rem;
+        max-width: 90vw;
+        > h1 {
+            @include heading;
+            font-size: 2.5rem;
+        }
+        > .hero-body {
+            @include body-text;
+            margin: 0.9rem 0 1.5rem 0;
+        }
+        > .cta-hero {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        flex-direction: row-reverse;
+        overflow: hidden;
+        padding-bottom: 0;
+        margin-bottom: -7.5rem;
+        > .mockup-container {
+            > .mockup {
+                margin-right: -18rem;
+            }
+            > .mobile-bg {
+                display: none;
+            }
+            > .desktop-bg {
+                display: block;
+                position: absolute;
+                margin: -18rem -28rem 0 0;
+            }
+        }
+
+        > .hero-main {
+            max-width: fit-content;
+            text-align: left;
+            margin: -5rem 0 0 10vw;
+            align-items: flex-start;
+            max-width: 31rem;
+            > h1 {
+                font-size: 3rem;
+            }
+            > .hero-body {
+                @include desktop-body-font-size;
+            }
+        }
+    }
+}
