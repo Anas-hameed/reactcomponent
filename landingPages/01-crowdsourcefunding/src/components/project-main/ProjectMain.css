@@ -1,0 +1,139 @@
+.project-main {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 2.5rem 3rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(117, 117, 117, 0.1);
+}
+
+.about {
+    margin-bottom: 2rem;
+}
+
+.about h3 {
+    padding-bottom: 2rem;
+}
+
+.about p, .pledge-main p {
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+.pledges {
+    width: 100%;
+}
+
+.pledge {
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(117, 117, 117, 0.3);
+}
+
+.pledge-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.pledge-text {
+    color: var(--moderate-cyan);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.pledge-footer {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.amount-left {
+    display: flex;
+}
+
+.amount-left h3 {
+    font-size: 2rem;
+}
+
+.amount-left p {
+    margin-top: 0.7rem;
+    padding-left: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.pledge-cta {
+    height: 50px;
+    width: 160px;
+    font-size: 0.9rem;
+}
+
+.pledge-unavailable {
+    border: 1px solid rgba(117, 117, 117, 0.15);
+}
+
+.pledge-header-unavailable h3 {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.unavailable-pledge-text {
+    color: var(--unavailable-cyan);
+}
+
+.pledge-main-unavailable p, .pledge-footer-unavailable p{
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.pledge-footer-unavailable h3 {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+    .project-main {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .about p, .pledge-main p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .pledge {
+        padding: 1.5rem;
+    }
+
+    .pledge-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pledge-header h3 {
+        font-size: 0.9rem;
+    }
+
+    .pledge-text {
+        padding-top: 0.3rem;
+    }
+
+    .pledge-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pledge-cta {
+        margin-top: 1.5rem;
+    }
+}

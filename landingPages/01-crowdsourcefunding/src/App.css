@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --moderate-cyan: hsl(176, 50%, 47%);
+  --dark-cyan: hsl(176, 72%, 28%);
+  --dark-grey: hsl(0, 0%, 48%);
+  --unavailable-cyan: hsla(176, 50%, 47%, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  font-family: "Commissioner", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #F9FAFA;
+}
+
+.cta {
+  background-color: var(--moderate-cyan);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-family: "Commissioner", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.cta:hover {
+  background-color: var(--dark-cyan);
+  cursor: pointer;
+}
+
+.cta-unavailable {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cta-unavailable:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: not-allowed;
+}
